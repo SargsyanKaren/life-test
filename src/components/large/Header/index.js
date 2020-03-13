@@ -18,11 +18,11 @@ const Header = () => {
 
     return (
         <View flex between>
-            <View padding='20px' borderR='1px solid rgba(0,0,0,.1)'>
-                <View 
+            <View padding='20px 40px' borderR='1px solid rgba(0,0,0,.1)'>
+                <View
                     width='80px'
                     height='40px'
-                    bg={`center/contain url(${logo}) no-repeat`} 
+                    bg={`center/contain url(${logo}) no-repeat`}
                 />
             </View>
             <View flex>
@@ -30,7 +30,7 @@ const Header = () => {
                     <View flex>
                         {menuData.map((item, index) => (
                             <View key={index} margin='0 10px'>
-                                <Text>{item.label}</Text>
+                                <Text color='red' hoverColor='blue'>{item.label}</Text>
                             </View>
                         ))}
                     </View>
