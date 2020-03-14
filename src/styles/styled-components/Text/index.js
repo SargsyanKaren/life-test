@@ -5,13 +5,17 @@ const setStyles = ({
 	color,
 	hoverColor,
 	cursor,
+	fontWeight,
+	lineHeight,
+	align
 }) => `
 	${size ? `font-size: ${size};` : ''}
 	${color ? `color: ${color};` : ''}
 	${cursor ? `cursor: ${cursor};` : ''}
+	${fontWeight ? `font-weight: ${fontWeight};` : ''}
+	${lineHeight ? `line-height: ${lineHeight};` : ''}
+	${align ? `text-align: ${align};` : ''}
 	${hoverColor ? `
-		transition-property: color;
-		transition-duration: .4s; 
 		&:hover{
 			color: ${hoverColor};
 		}

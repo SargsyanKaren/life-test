@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from '../../../styles';
+import { View, Text, colors } from '../../../styles';
 
 import { IoIosSearch, IoIosCart } from 'react-icons/io';
 
@@ -14,11 +14,11 @@ const Header = () => {
         { label: 'Blog' },
         { label: 'Shop' },
         { label: 'Shortcodes' },
-    ]
+    ];
 
     return (
-        <View flex between>
-            <View padding='20px 40px' borderR='1px solid rgba(0,0,0,.1)'>
+        <View flex between shadow='0px 0px 12px 0px rgba(0,0,0,.2)' position='fixed' width='100%' bgColor={colors.white}>
+            <View padding='15px 30px' borderR='1px solid rgba(0,0,0,.1)'>
                 <View
                     width='80px'
                     height='40px'
@@ -29,15 +29,19 @@ const Header = () => {
                 <View flex aCenter borderR='1px solid rgba(0,0,0,.1)'>
                     <View flex>
                         {menuData.map((item, index) => (
-                            <View key={index} margin='0 10px'>
-                                <Text color='red' hoverColor='blue'>{item.label}</Text>
+                            <View key={index} margin='0 15px'>
+                                <Text fontWeight={700} hoverColor={colors.teal}>{item.label}</Text>
                             </View>
                         ))}
                     </View>
                 </View>
                 <View flex aCenter padding='20px'>
-                    <IoIosSearch />
-                    <IoIosCart />
+                    <View margin='0 5px'>
+                        <IoIosSearch />
+                    </View>
+                    <View margin='0 5px'>
+                        <IoIosCart />
+                    </View>
                 </View>
             </View>
         </View>

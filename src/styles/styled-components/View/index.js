@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-const size = ({ 
-  minW, 
-  maxW, 
-  minH, 
-  maxH, 
-  width, 
+const size = ({
+  minW,
+  maxW,
+  minH,
+  maxH,
+  width,
   height,
 }) => `
   ${ width ? `width: ${width}` : ""};
@@ -16,17 +16,17 @@ const size = ({
   ${ maxH ? `max-height: ${maxH}` : ""};
 `;
 
-const marginPadding = ({ 
-  margin, 
-  padding, 
-  marginT, 
-  marginB, 
-  marginL, 
-  marginR, 
-  paddingT, 
-  paddingB, 
-  paddingL, 
-  paddingR, 
+const marginPadding = ({
+  margin,
+  padding,
+  marginT,
+  marginB,
+  marginL,
+  marginR,
+  paddingT,
+  paddingB,
+  paddingL,
+  paddingR,
 }) => `
   ${ margin ? `margin: ${margin}` : ""};
   ${ padding ? `padding: ${padding}` : ""};
@@ -40,13 +40,13 @@ const marginPadding = ({
   ${ paddingR ? `padding-right: ${paddingR}` : ""};
 `;
 
-const positions = ({ 
-  top, 
-  left, 
-  right, 
-  bottom, 
-  zIndex, 
-  position, 
+const positions = ({
+  top,
+  left,
+  right,
+  bottom,
+  zIndex,
+  position,
 }) => `
   ${ top ? `top: ${top}` : ""};
   ${ left ? `left: ${left}` : ""};
@@ -56,20 +56,20 @@ const positions = ({
   ${ position ? `position: ${position}` : ""};
 `;
 
-const border = ({ 
-  border, 
-  emptyC, 
-  radius, 
-  borderW, 
-  borderT, 
-  borderB, 
-  borderL, 
-  borderR, 
-  captionS, 
-  borderColl, 
-  borderSpac, 
-  borderColor, 
-  borderStyle, 
+const border = ({
+  border,
+  emptyC,
+  radius,
+  borderW,
+  borderT,
+  borderB,
+  borderL,
+  borderR,
+  captionS,
+  borderColl,
+  borderSpac,
+  borderColor,
+  borderStyle,
 }) => `
   ${ border ? `border: ${border}` : ""};
   ${ borderT ? `border-top: ${borderT}` : ""};
@@ -87,30 +87,30 @@ const border = ({
 `;
 
 const backgrounds = ({
-  bg, 
-  bgOr, 
+  bg,
+  bgOr,
   bgAt,
-  bgImg, 
-  bgPos, 
-  bgRep, 
-  bgSize, 
-  bgClip, 
-  bgColor, 
+  bgImg,
+  bgPos,
+  bgRep,
+  bgSize,
+  bgClip,
+  bgColor,
 }) => `
-  ${ bg ? `background: ${bg}` : ''}
-  ${ bgOr ? `background-origin: ${bgOr}` : '' }
-  ${ bgRep ? `background-repeat: ${bgRep}` : '' }
-  ${ bgSize ? `background-size: ${bgSize}` : '' }
-  ${ bgClip ? `background-clip: ${bgClip}` : '' }
-  ${ bgPos ? `background-position: ${bgPos}` : '' }
-  ${ bgAt ? `background-attachment: ${bgAt}` : '' }
-  ${ bgColor ? `background-color: ${bgColor}` : '' }
-  ${ bgImg ? `background-image: url(${bgImg})` : '' }
+  ${ bg ? `background: ${bg};` : ''}
+  ${ bgOr ? `background-origin: ${bgOr};` : '' }
+  ${ bgRep ? `background-repeat: ${bgRep};` : '' }
+  ${ bgSize ? `background-size: ${bgSize};` : '' }
+  ${ bgClip ? `background-clip: ${bgClip};` : '' }
+  ${ bgPos ? `background-position: ${bgPos};` : '' }
+  ${ bgAt ? `background-attachment: ${bgAt};` : '' }
+  ${ bgColor ? `background-color: ${bgColor};` : '' }
+  ${ bgImg ? `background-image: url(${bgImg});` : '' }
 `;
 
 const flexBox = ({
   row,
-  flex, 
+  flex,
   wrap,
   grow,
   aEnd,
@@ -187,7 +187,7 @@ const setResponsiveStyles = props => {
     const propName = item[0].slice(0, item.indexOf('-') - 1);
 
     if(!query[queryName]) query[queryName] = {};
-    
+
     query[queryName][propName] = item[1];
   })
 
