@@ -56,6 +56,17 @@ const positions = ({
   ${ position ? `position: ${position}` : ""};
 `;
 
+const other = ({ boxSizing, shadow, overflow, color, opacity, transition, cursor, textAlign }) => `
+  ${ color ? `color: ${color};` : ""}
+  ${ cursor ? `cursor: ${cursor};` : ""}
+  ${ opacity ? `opacity: ${opacity};` : ""}
+  ${ shadow ? `box-shadow: ${shadow};` : ""}
+  ${ overflow ? `overflow : ${overflow};` : ""}
+  ${ boxSizing ? `box-sizing: ${boxSizing};` : ""}
+  ${ transition ? `transition: ${transition};` : ""}
+  ${ textAlign ? `text-align: ${textAlign};` : ""}
+`;
+
 const border = ({
   border,
   emptyC,
@@ -158,15 +169,6 @@ const flexBox = ({
   ${ between ? 'justify-content: space-between;' : ''}
   ${ rowReverse ? 'flex-direction: row-reverse;' : '' }
   ${ columnReverse ? 'flex-direction: column-reverse;' : '' }
-`;
-
-const other = ({ boxSizing, shadow, overflow, color, opacity, transition }) => `
-  ${ color ? `color: ${color}` : ""};
-  ${ opacity ? `opacity: ${opacity}` : ""};
-  ${ shadow ? `box-shadow: ${shadow}` : ""};
-  ${ overflow ? `overflow : ${overflow}` : ""};
-  ${ boxSizing ? `box-sizing: ${boxSizing}` : ""};
-  ${ transition ? `transition: ${transition}` : ""};
 `;
 
 const setResponsiveStyles = props => {

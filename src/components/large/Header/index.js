@@ -29,7 +29,7 @@ const Header = () => {
                 <View flex aCenter borderR='1px solid rgba(0,0,0,.1)'>
                     <View flex>
                         {menuData.map((item, index) => (
-                            <View key={index} margin='0 15px'>
+                            <View key={index} margin='0 15px' cursor='pointer'>
                                 <Text fontWeight={700} hoverColor={colors.teal}>{item.label}</Text>
                             </View>
                         ))}

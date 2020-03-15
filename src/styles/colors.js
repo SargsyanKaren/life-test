@@ -20,6 +20,15 @@ const colors = {
 	danger: '#dc3545',
 	light: '#f8f9fa',
 	dark: '#343a40',
+
+	darkBlack: '#282828',
+	fbColor: '#3b5998',
+	twColor: '#00acee',
+	googleColor: '#dd4b39',
+	pinterestColor: '#c8232c',
+	vimeoColor: '#86c9ef',
+	hackerColor: '#720e9e',
+	ldColor: '#0e76a8'
 };
 
 export default colors;

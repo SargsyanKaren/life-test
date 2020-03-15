@@ -22,7 +22,7 @@ const Performance = () => {
 	];
 
 	return (
-		<View flex jCenter padding='40px 0'>
+		<View flex jCenter padding='80px 0'>
 			<View maxW='1170px' flex between>
 				{data.map(item => (
 					<View flex column aCenter>
@@ -30,7 +30,7 @@ const Performance = () => {
 						<View margin='25px 0'>
 							<Text fontWeight='bold'>{item.title}</Text>
 						</View>
-						<Text align='center' lineHeight='25px' size='13px'>{item.subTitle}</Text>
+						<Text align='center' lineHeight='25px' size='13px' color={colors.gray}>{item.subTitle}</Text>
 					</View>
 				))}
 			</View>

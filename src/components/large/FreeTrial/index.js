@@ -10,7 +10,8 @@ const Icon = styled(IoLogoApple)`
 `;
 
 const Button = styled(View)`
-	transition: .3s;
+	transition: .2s;
+	cursor: pointer;
 	&:hover{
 		background-color: white;
 	}

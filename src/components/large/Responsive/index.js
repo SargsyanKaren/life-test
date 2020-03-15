@@ -1,33 +1,29 @@
 import React from 'react';
 import { View, Text, colors } from '../../../styles';
-import { Button } from '../../index';
+import {Button, Icon} from '../../index';
 
-const Scalable = () => {
+const Responsive = () => {
 
 	return (
 		<View
-			bg='right url(http://themes.semicolonweb.com/html/canvas/images/appshowcase/ipad-section.png) no-repeat'
 			bgColor={colors.light}
 			flex
 			jCenter
 			aCenter
 			padding='80px 0'
 		>
-			<View maxW='1170px' grow={1}>
-				<View width='50%' flex column>
+			<View maxW='1170px' grow={1} flex aCenter>
+				<View grow={1} flex aCcenter>
+					<img src='http://themes.semicolonweb.com/html/canvas/images/appshowcase/iphone-solid.png' />
+				</View>
+				<View flex column grow={1} width='50%' paddingL='30px'>
 					<View padding='10px 0'>
-						<Text size='25px'>AWESOME SCALABLE APPS</Text>
+						<Text size='25px'>TYPICALLY RESPONSIVE</Text>
 					</View>
 					<View padding='10px 0'>
-						<Text size='20px' color={colors.gray}>Our Template acts & behaves truly as a Canvas.</Text>
+						<Text size='20px' color={colors.gray}>Our App scales beautifully to different Devices.</Text>
 					</View>
 					<View width='40px' margin='10px 0' borderT='2px solid' />
-					<View padding='10px 0'>
-						<Text size='14px' lineHeight='25px'>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Dolorem maiores pariatur voluptatem placeat laborum iste accusamus nam unde, iure id.
-						</Text>
-					</View>
 					<View padding='10px 0'>
 						<Text size='14px' lineHeight='25px'>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -45,4 +41,4 @@ const Scalable = () => {
 	);
 };
 
-export default Scalable;
+export default Responsive;

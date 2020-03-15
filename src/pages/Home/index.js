@@ -6,7 +6,11 @@ import {
   Footer,
   FreeTrial,
   Performance,
-  Scalable
+  Scalable,
+  Power,
+  Responsive,
+  Features,
+  ClientSay
 } from '../../components';
 
 const Home = () => {
@@ -16,6 +20,10 @@ const Home = () => {
             <FreeTrial />
             <Performance />
             <Scalable />
+            <Power />
+            <Responsive />
+            <Features />
+            <ClientSay />
             <Footer />
         </View>
     );
